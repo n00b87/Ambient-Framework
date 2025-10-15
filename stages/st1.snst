@@ -1,0 +1,29 @@
+Stage id=st1;
+
+---------------[Resources]----------------;
+
+Image id=texture_id0 file="grass2.png" ;
+Image id=texture_id1 file="survivorMaleB.png" ;
+
+
+Material id=material_id0 file="material_id0.snmtl";
+Material id=material_id1 file="material_id1.snmtl";
+Material id=material_id2 file="material_id2.snmtl";
+
+
+
+
+Mesh id=mesh_id0 file="level_collision.obj" collision_mesh=NONE material=material_id0;
+Mesh id=mesh_id1 file="Old_T-Pose.obj" collision_mesh=NONE material=material_id1;
+Mesh id=mesh_id2 file="char.ms3d" collision_mesh=NONE material=material_id2;
+
+
+
+---------------[Scene]----------------;
+
+Sky type=NONE dome=[NULL] lf=[NULL] rt=[NULL] up=[NULL] dn=[NULL] ft=[NULL] bk=[NULL] h=0 v=0 tx_pct=0 sp_pct=0 radius=0;
+
+
+Actor type=OCTREE id=tl  mesh=mesh_id0 animation=[NULL] loops=-1 material=[NULL] pos_x=0 pos_y=0 pos_z=-2878.3 rot_x=0 rot_y=0 rot_z=0 scale_x=4 scale_y=4 scale_z=4 visible=true store_visible=true shadow=false auto_culling=AUTOCULLING_BOX physics_shape=TRIMESH physics_solid=true physics_mass=0 cube_size=1 radius=1 use_attenuation=false cast_shadow=true light_type=POINT falloff=0 ambient=1065353216 diffuse=1065353216 specular=1065353216 inner_cone=0 outer_cone=0 constant=0 linear=0 quadratic=0 particle_type=POINT dir_x=0 dir_y=0 dir_z=0 use_every_vertex=false normal_dir_mod=100 use_normal_dir=false min_per_sec=0 max_per_sec=0 min_start_color=0 max_start_color=0 min_life=0 max_life=0 max_angle=0 min_start_width=0 min_start_height=0 max_start_width=0 max_start_height=0 center_x=0 center_y=0 center_z=0 ring_thickness=0 box_min_x=0 box_min_y=0 box_min_z=0 box_max_x=0 box_max_y=0 box_max_z=0 normal_x=0 normal_y=0 normal_z=0 length=0 use_outline_only=false terrain_hmap_file= terrain_size=2 patch_size=0 wave_height=0 wave_speed=0 wave_length=0;
+Actor type=LIGHT id=point_light  mesh=[NULL] animation=[NULL] loops=-1 material=[NULL] pos_x=134.357 pos_y=180 pos_z=-2288.61 rot_x=29.9621 rot_y=-135.036 rot_z=32.9893 scale_x=1 scale_y=1 scale_z=1 visible=true store_visible=true shadow=false auto_culling=AUTOCULLING_BOX physics_shape=SPHERE physics_solid=false physics_mass=0 cube_size=1 radius=250 use_attenuation=false cast_shadow=true light_type=POINT falloff=500 ambient=4278212480 diffuse=4284141880 specular=4293998556 inner_cone=20 outer_cone=30 constant=0.5 linear=0.5 quadratic=0.5 particle_type=POINT dir_x=0 dir_y=0 dir_z=0 use_every_vertex=false normal_dir_mod=100 use_normal_dir=false min_per_sec=0 max_per_sec=0 min_start_color=0 max_start_color=0 min_life=0 max_life=0 max_angle=0 min_start_width=0 min_start_height=0 max_start_width=0 max_start_height=0 center_x=0 center_y=0 center_z=0 ring_thickness=0 box_min_x=0 box_min_y=0 box_min_z=0 box_max_x=0 box_max_y=0 box_max_z=0 normal_x=0 normal_y=0 normal_z=0 length=0 use_outline_only=false terrain_hmap_file= terrain_size=11 patch_size=0 wave_height=0 wave_speed=0 wave_length=0;
+Actor type=ANIMATED id=gy  mesh=mesh_id2 animation=[NULL] loops=-1 material=[NULL] pos_x=77.5425 pos_y=86.7411 pos_z=-2330.23 rot_x=0 rot_y=0 rot_z=0 scale_x=4 scale_y=4 scale_z=4 visible=true store_visible=true shadow=true auto_culling=AUTOCULLING_OFF physics_shape=CAPSULE physics_solid=true physics_mass=20 cube_size=1 radius=1 use_attenuation=false cast_shadow=true light_type=POINT falloff=0 ambient=1065353216 diffuse=1065353216 specular=1065353216 inner_cone=0 outer_cone=0 constant=0 linear=0 quadratic=0 particle_type=POINT dir_x=0 dir_y=0 dir_z=0 use_every_vertex=false normal_dir_mod=100 use_normal_dir=false min_per_sec=0 max_per_sec=0 min_start_color=0 max_start_color=0 min_life=0 max_life=0 max_angle=0 min_start_width=0 min_start_height=0 max_start_width=0 max_start_height=0 center_x=0 center_y=0 center_z=0 ring_thickness=0 box_min_x=0 box_min_y=0 box_min_z=0 box_max_x=0 box_max_y=0 box_max_z=0 normal_x=0 normal_y=0 normal_z=0 length=0 use_outline_only=false terrain_hmap_file= terrain_size=2 patch_size=0 wave_height=0 wave_speed=0 wave_length=0;
